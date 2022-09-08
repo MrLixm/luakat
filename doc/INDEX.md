@@ -29,3 +29,15 @@ It can then be accessed via :
 ```lua
 local luakat = require("luakat")
 ```
+
+## dependencies
+
+`luakat` also require `luabased` to work
+
+> https://github.com/MrLixm/luabased
+
+It is imported in this package like :
+
+```lua
+local luabased = require("luabased")
+```

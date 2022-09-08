@@ -1,7 +1,6 @@
 local _M_ = {}
 
-local luabase = {}
-luabase.formatting = require("luabase.formatting")
+local luabased = require("luabased")
 local logging = require("lllogger")
 
 local logger = logging:get_logger("luakat.attribute")
@@ -47,7 +46,7 @@ function _M_.getAttr(attr_path)
   local lattr = Interface.GetAttr(attr_path)
 
   if not lattr then
-    luabase.formatting:errorc(
+    luabased.raising.errorc(
         "[getAttr] Attr <",
         attr_path,
         "> not found on location ",
@@ -78,7 +77,7 @@ function _M_.getAttributeClass(dataattribute)
   elseif  dataattribute == "StringAttribute" or Attribute.IsString(dataattribute) == true then
     return StringAttribute
   else
-    luabase.formatting:errorc(
+    luabased.raising.errorc(
         "[getAttributeClass] passed class type <",
         dataattribute,
         "> is not supported."

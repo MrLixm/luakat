@@ -1,7 +1,6 @@
 local _M_ = {}
 
-local luabase = {}
-luabase.formatting = require("luabase.formatting")
+local luabased = require("luabased")
 local logging = require("lllogger")
 
 local logger = logging:get_logger("katlua.location")
@@ -15,7 +14,7 @@ function _M_.getLocationName(location)
   Returns:
     str: name of the location without its hierarchy. ex: "primitive"
   ]]
-  local name = luabase.formatting.split(location, "/")
+  local name = luabased.stringing.split(location, "/")
   return name[#name]  -- return the last element of the list
 end
 
