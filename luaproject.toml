@@ -6,3 +6,8 @@ authors = ["Liam Collod <lcollod@gmail.com>"]
 readme = "README.md"
 repository = "https://github.com/MrLixm/luakat"
 keywords = ["vfx", "katana", "opscript"]
+
+[dependencies]
+lua = ">=5.1.5"
+luabased = "*"
+katana = ">=3.6"
