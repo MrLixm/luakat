@@ -3,7 +3,7 @@ local _M_ = {}
 local luabased = require("luabased")
 local logging = require("lllogger")
 
-local logger = logging:get_logger("katlua.location")
+local logger = logging:get_logger(...)
 _M_.logger = logger
 
 function _M_.getLocationName(location)
