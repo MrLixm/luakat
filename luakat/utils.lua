@@ -1,13 +1,13 @@
+local _M_ = {}
+
 local luabase = {}
 luabase.formatting = require("luabase.formatting")
 local logging = require("lllogger")
 
 local logger = logging:get_logger("katlua.utils")
+_M_.logger = logger
 
-local _M = {}
-_M["logger"] = logger
-
-function _M.getKatanaVersion()
+function _M_.getKatanaVersion()
   --[[
   Returns:
     num:
@@ -21,4 +21,4 @@ function _M.getKatanaVersion()
 
 end
 
-return _M
+return _M_

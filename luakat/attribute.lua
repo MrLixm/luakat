@@ -1,13 +1,13 @@
+local _M_ = {}
+
 local luabase = {}
 luabase.formatting = require("luabase.formatting")
 local logging = require("lllogger")
 
 local logger = logging:get_logger("luakat.attribute")
+_M_.logger = logger
 
-local _M = {}
-_M["logger"] = logger
-
-function _M.getUserAttr(name, default)
+function _M_.getUserAttr(name, default)
   --[[
   Return an OpScript user attribute.
   If not found return the default_value.
@@ -33,7 +33,7 @@ function _M.getUserAttr(name, default)
 
 end
 
-function _M.getAttr(attr_path)
+function _M_.getAttr(attr_path)
   --[[
   Get the given attribute on the currently visited location.
   Raise an error is nil result is found.
@@ -59,7 +59,7 @@ function _M.getAttr(attr_path)
 
 end
 
-function _M.getAttributeClass(dataattribute)
+function _M_.getAttributeClass(dataattribute)
   --[[
   Returned a non-instanced version of the DataAttribute given in arg.
 
@@ -86,4 +86,4 @@ function _M.getAttributeClass(dataattribute)
   end
 end
 
-return _M
+return _M_
