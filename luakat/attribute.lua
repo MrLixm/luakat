@@ -2,7 +2,7 @@ local luabase = {}
 luabase.formatting = require("luabase.formatting")
 local logging = require("lllogger")
 
-local logger = logging:get_logger("luakat.retrieve")
+local logger = logging:get_logger("luakat.attribute")
 
 local _M = {}
 _M["logger"] = logger
