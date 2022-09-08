@@ -1,5 +1,5 @@
 name = "luakat"
-version = "0.1.0"  # version has to be kept in sync with ./luakat/init.lua
+version = "0.2.0"  # version has to be kept in sync with ./luakat/init.lua
 description = "Improve interaction and workflow with the Katana lua API."
 license = "Apache-2.0"
 authors = ["Liam Collod <lcollod@gmail.com>"]
