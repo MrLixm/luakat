@@ -19,7 +19,8 @@ _M_._LICENSE = [[
 
 local _self = (...):gsub('%.init$', '')
 
-_M_.retrieve = require(_self .. '.retrieve')
+_M_.attribute = require(_self .. '.attribute')
+_M_.location = require(_self .. '.location')
 _M_.utils = require(_self .. '.utils')
 
 return _M_
