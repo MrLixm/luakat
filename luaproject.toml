@@ -2,13 +2,13 @@ name = "luakat"
 version = "1.0.0"  # version has to be kept in sync with ./luakat/init.lua
 description = "Improve interaction and workflow with the Katana lua API."
 license = "Apache-2.0"
-authors = ["Liam Collod <lcollod@gmail.com>"]
+authors = ["Liam Collod <monsieurlixm@gmail.com>"]
 readme = "README.md"
 repository = "https://github.com/MrLixm/luakat"
 keywords = ["vfx", "katana", "opscript"]
-
-[dependencies]
-lua = ">=5.1.5"
-luabased = "*"
-katana = ">=3.6"
-lllogger = ">=2.0.0"
+dependencies = [
+    "lua>=5.1.5",
+    "katana>=3.6",
+    "luabased>=1.0.0",
+    "lllogger>=2.0.0",
+]
