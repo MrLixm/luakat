@@ -11,3 +11,4 @@ keywords = ["vfx", "katana", "opscript"]
 lua = ">=5.1.5"
 luabased = "*"
 katana = ">=3.6"
+lllogger = ">=2.0.0"
