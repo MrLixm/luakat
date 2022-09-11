@@ -10,7 +10,7 @@ Welcome on the `luakat` package documentation.
 Add the module to your system :
 
 ```shell
-LUA_PATH = "/z/someplace/parentdir/?.lua"
+LUA_PATH="/z/someplace/parentdir/?.lua"
 # where `parentdir` contains `luakat/`
 ```
 
@@ -21,7 +21,7 @@ cd /z/demo
 
 git clone "https://github.com/MrLixm/luakat"
 
-LUA_PATH = "/z/demo/luakat/?.lua"
+LUA_PATH="/z/demo/luakat/?.lua"
 ```
 
 It can then be accessed via :
@@ -32,7 +32,9 @@ local luakat = require("luakat")
 
 ## dependencies
 
-`luakat` also require `luabased` to work
+### luabased
+
+`luakat` requires `luabased` to work
 
 > https://github.com/MrLixm/luabased
 
@@ -40,4 +42,16 @@ It is imported in this package like :
 
 ```lua
 local luabased = require("luabased")
+```
+
+### lllogger
+
+`luakat` requires `lllogger` to work
+
+> https://github.com/MrLixm/llloger
+
+It is imported in this package like :
+
+```lua
+local logging = require("lllogger")
 ```
