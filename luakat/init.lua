@@ -1,5 +1,5 @@
 local _M_ = {}
-_M_._VERSION = '1.0.0'
+_M_._VERSION = '1.0.1'
 _M_._DESCRIPTION = 'Improve interaction and workflow with the Katana lua API.'
 _M_._LICENSE = [[
    Copyright 2022 Liam Collod
