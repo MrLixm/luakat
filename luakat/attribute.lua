@@ -6,7 +6,7 @@ local logging = require("lllogger")
 local logger = logging:getLogger(...)
 _M_.logger = logger
 
-function _M_.getUserAttr(name, default)
+function _M_.getUserAttrValue(name, default)
   --[[
   Return an OpScript user attribute.
   If not found return the default_value.
