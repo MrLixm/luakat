@@ -2,7 +2,7 @@ local _M_ = {}
 
 local logging = require("lllogger")
 
-local logger = logging:get_logger(...)
+local logger = logging:getLogger(...)
 _M_.logger = logger
 
 function _M_.getKatanaVersion()
