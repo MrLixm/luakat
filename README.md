@@ -7,6 +7,9 @@ A lua module for easier interaction with Foundry Katana lua API.
 
 Used in OpScripts to reduce duplicated code and enforce good practices.
 
+See [opscripting repo](https://github.com/MrLixm/opscripting) to see how to
+integrate it in the OpScript workflow.
+
 # Documentation
 
 > [![documentation](https://img.shields.io/badge/visit_documentation-blue)](./doc/INDEX.md)
