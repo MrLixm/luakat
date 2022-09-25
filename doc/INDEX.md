@@ -55,3 +55,8 @@ It is imported in this package like :
 ```lua
 local logging = require("lllogger")
 ```
+
+# Development
+
+Type hinting is performed using [EmmyLua - EmmyLua for IntelliJ IDEA 1.3.2 documentation](https://emmylua.github.io/index.html)
+which is itself similar to [LDoc](https://stevedonovan.github.io/ldoc/manual/doc.md.html).
